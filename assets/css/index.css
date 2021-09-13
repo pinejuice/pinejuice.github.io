@@ -1,0 +1,5 @@
+.main_contents {
+    max-width: calc(100vw - 250px);
+    min-width: calc(100vw - 250px);
+    background-color: #90AFC5;
+}

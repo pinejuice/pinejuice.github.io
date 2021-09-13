@@ -1,0 +1,95 @@
+#othello_board {
+    height: 600px;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0px
+}
+
+#othello_board td {
+    border: solid 1px #000000;
+    background-color: #119911;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
+#othello_board td div {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+#othello_board .wall_sumi {
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    height: 15px;
+    width: 15px;
+}
+#othello_board .wall_tate {
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    height: 60px;
+    width: 15px;
+}
+#othello_board .wall_yoko {
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    height: 15px;
+    width: 60px;
+}
+#othello_board .white_stone div{
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+#othello_board .black_stone div{
+    border-radius: 50%;
+    background-color: #000000;
+}
+#othello_board .can_set_stone div{
+    height: 55px;
+    width: 55px;
+    margin-left: 5px;
+    background-color: #575454;
+}
+
+#info_area {
+    width: 600px;
+}
+#start_button {
+    margin-top: 5px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer
+}
+#turn_info {
+    margin: 5px;
+    height: 30px;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+}
+#score_info {
+    margin: 5px;
+    height: 30px;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+}
+#error_message {
+    margin: 5px;
+    height: 30px;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    color: #ff0000;
+}
