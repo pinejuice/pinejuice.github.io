@@ -1,5 +1,15 @@
-.main_contents {
-    max-width: calc(100% - 250px);
-    min-width: calc(100% - 250px);
-    background-color: #90AFC5;
+/* PCの場合 */
+@media screen and (min-width: 481px) {
+    .main_contents {
+        max-width: calc(100% - 250px);
+        min-width: calc(100% - 250px);
+        background-color: #90AFC5;
+    }
+/* スマートフォンの場合 */
+}@media screen and (max-width: 480px) {
+    .main_contents {
+        max-width: calc(100% - 100px);
+        min-width: calc(100% - 100px);
+        background-color: #90AFC5;
+    }
 }

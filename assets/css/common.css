@@ -13,12 +13,23 @@ header .navbar {
 /* ***************************** 
  * サイドバー                   *
  ***************************** */
-.sidebar {
-    max-width: 250px;
-    min-width: 250px;
-    max-height: calc(100vh - 50px);
-    min-height: calc(100vh - 50px);
-    background-color: #336B87 !important;
+/* PCの場合 */
+@media screen and (min-width: 481px) {
+    .sidebar {
+        max-width: 250px;
+        min-width: 250px;
+        max-height: calc(100vh - 50px);
+        min-height: calc(100vh - 50px);
+        background-color: #336B87 !important;
+    }
+}@media screen and (max-width: 480px) {
+    .sidebar {
+        max-width: 100px;
+        min-width: 100px;
+        max-height: calc(100vh - 50px);
+        min-height: calc(100vh - 50px);
+        background-color: #336B87 !important;
+    }
 }
 .sidebar li{
     background-color: rgba(255, 255, 255, 0.493);
