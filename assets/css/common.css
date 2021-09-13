@@ -14,7 +14,7 @@ header .navbar {
  * サイドバー                   *
  ***************************** */
 /* PCの場合 */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 501px) {
     .sidebar {
         max-width: 250px;
         min-width: 250px;
@@ -22,13 +22,16 @@ header .navbar {
         min-height: calc(100vh - 50px);
         background-color: #336B87 !important;
     }
-}@media screen and (max-width: 480px) {
+}@media screen and (max-width: 500px) {
     .sidebar {
         max-width: 100px;
         min-width: 100px;
         max-height: calc(100vh - 50px);
         min-height: calc(100vh - 50px);
         background-color: #336B87 !important;
+    }
+    .sidebar .nav-link {
+        padding: auto;
     }
 }
 .sidebar li{
