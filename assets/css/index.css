@@ -1,15 +1,17 @@
-/* PCの場合 */
-@media screen and (min-width: 501px) {
-    .main_contents {
-        max-width: calc(100% - 250px);
-        min-width: calc(100% - 250px);
-        background-color: #90AFC5;
-    }
-/* スマートフォンの場合 */
-}@media screen and (max-width: 500px) {
-    .main_contents {
-        max-width: calc(100% - 100px);
-        min-width: calc(100% - 100px);
-        background-color: #90AFC5;
-    }
+.main_contents {
+    max-width: calc(100% - 250px);
+    min-width: calc(100% - 250px);
+    background-color: #90AFC5;
+}
+#work_games {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 10px;
+    width: 900px;
+}
+
+.card {
+    width: 200px;
+    margin: 5px;
 }

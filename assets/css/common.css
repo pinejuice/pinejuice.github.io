@@ -31,7 +31,7 @@ header .navbar {
         background-color: #336B87 !important;
     }
     .sidebar .nav-link {
-        padding: auto;
+        padding: 0 !important;
     }
 }
 .sidebar li{
