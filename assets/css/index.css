@@ -8,10 +8,12 @@
     border-radius: 5px;
     padding: 5px;
     margin: 5px 10px;
-    width: 900px;
+    width: 1100px;
 }
-
-.card {
-    width: 200px;
-    margin: 5px;
+#work_css_magic {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 10px;
+    width: 1100px;
 }

@@ -13,28 +13,31 @@ header .navbar {
 /* ***************************** 
  * サイドバー                   *
  ***************************** */
-/* PCの場合 */
-@media screen and (min-width: 501px) {
-    .sidebar {
-        max-width: 250px;
-        min-width: 250px;
-        max-height: calc(100vh - 50px);
-        min-height: calc(100vh - 50px);
-        background-color: #336B87 !important;
-    }
-}@media screen and (max-width: 500px) {
-    .sidebar {
-        max-width: 100px;
-        min-width: 100px;
-        max-height: calc(100vh - 50px);
-        min-height: calc(100vh - 50px);
-        background-color: #336B87 !important;
-    }
-    .sidebar .nav-link {
-        padding: 0 !important;
-    }
+.sidebar {
+    max-width: 250px;
+    min-width: 250px;
+    max-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
+    background-color: #336B87 !important;
 }
 .sidebar li{
     background-color: rgba(255, 255, 255, 0.493);
     color: white;
+}
+
+/* ***************************** 
+ * 共通パーツ                   *
+ ***************************** */
+.card {
+    width: 250px;
+    margin: 5px;
+}
+.card-body {
+    padding: 5px !important;
+}
+
+.read_more {
+    width: 300px;
+    margin: 10px 0;
+    text-decoration: none;
 }
