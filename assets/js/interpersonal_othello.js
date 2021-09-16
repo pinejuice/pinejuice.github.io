@@ -208,7 +208,7 @@ function CountStones() {
 
 window.onclick = function(e) {
     if (game_status !== 'Ready') {
-        if (e.path.length === 10 && e.path[1]['className'] === 'can_set_stone') {
+        if ((e.path.length === 10 || e.path.length === 13 ) && e.path[1]['className'] === 'can_set_stone') {
             ResetCanSet();
             var x_y = e.path[1]['id'];
             var error_message = document.getElementById('error_message');
