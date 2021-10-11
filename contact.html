@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | pinejuice's collection of works</title>
+    <!-- jQueryの読み込み -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- bootstrapの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- 自作ファイルの読み込み -->
+    <script src="assets/js/common.js"></script>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script src="assets/js/contact.js"></script>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- アイコンとか -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon-180x180.png">　
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header></header>
+    <main>
+        <div class="page-wrapper d-flex flex-row">
+            <!-- サイトバーメニュー -->
+            <div class="sidebar"></div>
+            <!-- 全ページの右のコンテンツ -->
+            <div class="main_contents">
+                <h1>pinejuiceに問い合わせ</h1>
+                <form id="contact_form" class="mx-auto" action="" method="post">
+                    <table class="mx-auto">
+                        <tr>
+                            <th>ご返信先のメールアドレスを入力してください。</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" name="email" id="email" value="" required>
+                            </td>
+                        <tr>
+                            <th>お問い合わせ内容を選択して下さい。</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="subject" id="subject" required>
+                                    <option value=""></option>
+                                    <option value="question">質問したい</option>
+                                    <option value="request_job">仕事を依頼したい</option>
+                                    <option value="request_contents">コンテンツを追加してほしい</option>
+                                    <option value="others">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>具体的な内容をご記入ください。</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name="main_contact" id="main_contact" cols="100" rows="10" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="送信" class="btn btn-primary" onclick="send_contact()">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--フッター -->
+    <footer></footer>
+</body>
+</html>
