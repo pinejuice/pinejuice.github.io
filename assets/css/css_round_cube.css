@@ -1,0 +1,47 @@
+#animation {
+    border: 1px solid #000000;
+    width: 500px;
+    height: 500px;
+    margin: 80px 100px;
+}
+.square {
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 200px;
+    animation: turnAround 30s linear 0s infinite normal none running;
+}
+.square div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    background-color: #cccccc;
+}
+.square .top {
+    transform: translate3d(100px, 90px, 0px) rotateX(-90deg);
+}
+.square .bottom {
+    transform: translate3d(100px, 90px, 0px) rotateX(90deg);
+}
+.square .front {
+    transform: translate3d(100px, -60px, 50px);
+}
+.square .back {
+    transform: translate3d(100px, -160px, -50px) rotateX(180deg);
+}
+.square .left {
+    transform: translate3d(50px, -260px, 0px) rotateY(-90deg);
+}
+.square .right {
+    transform: translate3d(150px, -360px, 0px) rotateY(90deg);
+}
+@keyframes turnAround {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
